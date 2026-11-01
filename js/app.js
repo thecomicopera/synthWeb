@@ -339,4 +339,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Load first preset by default
     presetManager.applyPreset(0);
+
+    // Expose synth instances globally for WebMCP and external integrations
+    window.synth = {
+        engine,
+        keyboard,
+        visualizer,
+        recorder,
+        presetManager,
+        knobs,
+        updateUIForPreset
+    };
 });
