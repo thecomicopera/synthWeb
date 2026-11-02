@@ -101,7 +101,7 @@ Add the `synthweb` MCP server entry under `mcpServers`:
     "synthweb": {
       "command": "node",
       "args": [
-        "C:\\Users\\adiss\\OneDrive\\Documents\\code\\synthWeb\\bridge\\index.js",
+        "./bridge/index.js",
         "--remote-debugging-port=9222",
         "--target-url=synthWeb"
       ]
@@ -110,7 +110,7 @@ Add the `synthweb` MCP server entry under `mcpServers`:
 }
 ```
 
-*(On macOS/Linux, adjust the path to your cloned repository location, e.g. `/path/to/synthWeb/bridge/index.js`)*.
+*(Path is relative to the repository root. On Windows with Claude Desktop you may need an absolute path if relative resolution fails.)*.
 
 ### Cursor
 
